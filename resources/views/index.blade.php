@@ -622,89 +622,16 @@
                         <img class="w-100" src="/img/png/profile pic/Group 1054.png" data-toggle="modal" data-target="#liveModal">
                         <a class="badge bg-danger text-light rounded-pill" style="position: absolute;margin:1.25rem;">Live <i class="fas fa-caret-down"></i></a>
                     </div>
-                    <div class="card p-3 mt-3" style="border-radius: 10px;color:#7f8685;">
-                        <b class="text-dark font-size15">ตารางเวลาถ่ายทอดสดวิดีโอ</b>
-                        <hr>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">MON</h5>
-                            <h5 class="col mr-2 badge rounded-pill font-weight-light bag-light-yellow">10.00-11.00</h5>
-                            <h5 class="col badge rounded-pill font-weight-light bag-light-yellow">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">TUE</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light bag-light-yellow">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">WED</h5>
-                            <h5 class="col mr-2 badge rounded-pill font-weight-light bag-light-yellow">10.00-11.00</h5>
-                            <h5 class="col badge rounded-pill font-weight-light bag-light-yellow">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">THU</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light bag-light-yellow">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">FRI</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light bag-light-yellow">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">SAT</h5>
-                            <h5 class="col badge rounded-pill font-weight-light bag-light-yellow">10.00-11.00</h5>
-                            <h5 class="col"></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">SUN</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light bag-light-yellow">19.00-20.00</h5>
-                        </div>
-                    </div>
+
+                    <!-- ตาราง live ขวา -->
+                    @include('include.body.inc-timetable-live')
+
                     <hr class="mt-4 rounded" style="border-width: 2px;background-color:#c3c1bd;">
                 </div>
-                <div>
-                    <b class="font-size18">ตามหาพระ</b>
-                    <form class="mt-3">
-                        <div class="form-row">
-                            <div class="col-12 mb-2">
-                                <select class="custom-select my-1 mr-sm-2 rounded-pill" id="inlineFormCustomSelectPref">
-                                    <option selected>เลือกจากพระเภทพระ</option>
-                                    <option value="1">พระบูชา</option>
-                                    <option value="2">พระกรุ</option>
-                                    <option value="3">เครื่องราง</option>
-                                    <option value="4">พระรูปหล่อ</option>
-                                    <option value="5">พระปิดตา</option>
-                                    <option value="6">เหรียญหล่อ</option>
-                                    <option value="7">พระกรึ่ง พระชัย</option>
-                                    <option value="8">พระอื่นๆ</option>
-                                </select>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <input type="text" class="form-control rounded-pill" placeholder="ชื่อพระเครื่อง / ร้านพระ">
-                            </div>
-                            <div class="col-6 mb-2">
-                                <select class="custom-select my-1 mr-sm-2 rounded-pill" id="inlineFormCustomSelectPref">
-                                    <option selected>ราคา</option>
-                                    <option value="1">100-999</option>
-                                    <option value="2">1000-1499</option>
-                                    <option value="3">1500-5000</option>
-                                </select>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <select class="custom-select my-1 mr-sm-2 rounded-pill" id="inlineFormCustomSelectPref">
-                                    <option selected>จังหวัด</option>
-                                    <option value="1">กรุงเทพ</option>
-                                    <option value="2">ระนอง</option>
-                                    <option value="3">ระยอง</option>
-                                    <option value="3">ยะลา</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                    <button class="btn text-light rounded-pill col-12" style="background-color: #d09b2c;">ค้นหาพระ</button>
-                    <hr class="mt-4 rounded" style="border-width: 2px;background-color:#c3c1bd;">
-                </div>
+
+                <!-- ตามหาพระ ขวา -->
+                @include('include.body.inc-looking-monk')
+
                 <div>
                     <div class="mt-3 mb-2">
                         <b class="font-size18">ร้านที่คุณอาจจะถูกใจ</b>

@@ -372,89 +372,16 @@
                         <img class="w-100" src="/img/png/profile pic/Group 1054.png">
                         <a class="badge bg-danger text-light rounded-pill" style="position: absolute;margin:10px 0 0 -200px;">Live <i class="fas fa-caret-down"></i></a>
                     </div>
-                    <div class="card p-3 mt-3" style="border-radius: 10px;color:#7f8685;">
-                        <b class="text-dark font-size15">ตารางเวลาถ่ายทอดสดวิดีโอ</b>
-                        <hr>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">MON</h5>
-                            <h5 class="col mr-2 badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">10.00-11.00</h5>
-                            <h5 class="col badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">TUE</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">WED</h5>
-                            <h5 class="col mr-2 badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">10.00-11.00</h5>
-                            <h5 class="col badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">THU</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">FRI</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">19.00-20.00</h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">SAT</h5>
-                            <h5 class="col badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">10.00-11.00</h5>
-                            <h5 class="col"></h5>
-                        </div>
-                        <div class="row">
-                            <h5 class="d-flex mr-2 font-size15">SUN</h5>
-                            <h5 class="col"></h5>
-                            <h5 class="col badge rounded-pill font-weight-light" style="background-color: #f0ebe1;">19.00-20.00</h5>
-                        </div>
-                    </div>
+
+                    <!-- ตาราง live ขวา -->
+                    @include('include.body.inc-timetable-live')
+
                     <hr class="mt-4 rounded" style="border-width: 2px;background-color:#c3c1bd;">
                 </div>
-                <div>
-                    <b class="font-size18">ตามหาพระ</b>
-                    <form class="mt-3">
-                        <div class="form-row">
-                            <div class="col-12 mb-2">
-                                <select class="custom-select my-1 mr-sm-2 rounded-pill" id="inlineFormCustomSelectPref">
-                                    <option selected>เลือกจากพระเภทพระ</option>
-                                    <option value="1">พระบูชา</option>
-                                    <option value="2">พระกรุ</option>
-                                    <option value="3">เครื่องราง</option>
-                                    <option value="4">พระรูปหล่อ</option>
-                                    <option value="5">พระปิดตา</option>
-                                    <option value="6">เหรียญหล่อ</option>
-                                    <option value="7">พระกรึ่ง พระชัย</option>
-                                    <option value="8">พระอื่นๆ</option>
-                                </select>
-                            </div>
-                            <div class="col-12 mb-2">
-                                <input type="text" class="form-control rounded-pill" placeholder="ชื่อพระเครื่อง / ร้านพระ">
-                            </div>
-                            <div class="col-6 mb-2">
-                                <select class="custom-select my-1 mr-sm-2 rounded-pill" id="inlineFormCustomSelectPref">
-                                    <option selected>ราคา</option>
-                                    <option value="1">100-999</option>
-                                    <option value="2">1000-1499</option>
-                                    <option value="3">1500-5000</option>
-                                </select>
-                            </div>
-                            <div class="col-6 mb-2">
-                                <select class="custom-select my-1 mr-sm-2 rounded-pill" id="inlineFormCustomSelectPref">
-                                    <option selected>จังหวัด</option>
-                                    <option value="1">กรุงเทพ</option>
-                                    <option value="2">ระนอง</option>
-                                    <option value="3">ระยอง</option>
-                                    <option value="3">ยะลา</option>
-                                </select>
-                            </div>
-                        </div>
-                    </form>
-                    <button class="btn text-light rounded-pill col-12" style="background-color: #d09b2c;">ค้นหาพระ</button>
-                    <hr class="mt-4 rounded" style="border-width: 2px;background-color:#c3c1bd;">
-                </div>
+
+                <!-- ตามหาพระ ขวา -->
+                @include('include.body.inc-looking-monk')
+
                 <div>
                     <div class="mt-3 mb-2">
                         <b class="font-size18">ร้านที่คุณอาจจะถูกใจ</b>
@@ -530,65 +457,7 @@
     @include('include.footer.inc-chat-admin')
     @include('include.footer.inc-footer')
 
-    <!-- Modal login -->
-    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content" style="border-radius: 10px;">
-                <div class="modal-header border-bottom-0">
-                    <button type="button" class="close" style="font-size: 3rem;padding: 0 1rem 0 1rem;" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" style="padding: 0 1rem 1rem 1rem;">
-                    <h5 class="text-center font-weight-bold mb-4">เข้าสู่ระบบ</h5>
-                    <h5 class="font-size15">เบอร์โทรศัพท์</h5>
-                    <input type="number" class="form-control mb-3" style="border-radius: 15px;" placeholder="เบอร์โทรศัพท์">
-                    <h5 class="font-size15">รหัสผ่าน</h5>
-                    <input type="text" class="form-control mb-3" style="border-radius: 15px;" placeholder="รหัสผ่าน">
-                    <h5 class="d-flex justify-content-end font-size15" style="color:#d09b2c;">ลืมรหัสผ่าน</h5>
-                    <a class="btn text-center w-100 text-light mt-1" style="background-color: #d09b2c;border-radius: 15px;" href="{{ url('/index_login') }}">เข้าสู่ระบบ</a>
-                    <div class="row mt-2">
-                        <div class="col">
-                            <hr>
-                        </div>
-                        <div class="col-2 text-center">หรือ</div>
-                        <div class="col">
-                            <hr>
-                        </div>
-                    </div>
-                    <button class="btn text-center w-100 text-light mt-2" style="background-color: #1877f2;border-radius: 15px;">เข้าสู่ระบบด้วย Facebook <i class="fab fa-facebook-f"></i></button>
-                    <button class="btn text-center w-100 text-light mt-3" style="background-color: #dc4e41;border-radius: 15px;">เข้าสู่ระบบด้วย Google <i class="fab fa-google-plus-g"></i></button>
-                    <button class="btn text-center w-100 text-light mt-3" style="background-color: #000000;border-radius: 15px;">เข้าสู่ระบบด้วย Apple ID <i class="fab fa-apple"></i></button>
-                    <button class="btn text-center w-100 text-light mt-3 mb-2" style="background-color: #7f8685;border-radius: 15px;">ลงทะเบียน</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Modal register -->
-    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content" style="border-radius: 10px;">
-                <div class="modal-header border-bottom-0">
-                    <button type="button" class="close" style="font-size: 3rem;padding: 0 1rem 0 1rem;" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" style="padding: 0 1rem 1rem 1rem;">
-                    <h5 class="text-center font-weight-bold mb-4">สมัครสมาชิก</h5>
-                    <h5 class="font-size15">ชื่อ - นามสกุล</h5>
-                    <input type="text" class="form-control mb-3" style="border-radius: 15px;" placeholder="ชื่อ - นามสกุล">
-                    <h5 class="font-size15">เบอร์โทรศัพท์ (เพื่อใช้ในการเข้าสู่ระบบ)</h5>
-                    <input type="number" class="form-control mb-3" style="border-radius: 15px;" placeholder="เบอร์โทรศัพท์">
-                    <h5 class="font-size15">รหัสผ่าน (เพื่อใช้ในการเข้าสู่ระบบ)</h5>
-                    <input type="text" class="form-control mb-3" style="border-radius: 15px;" placeholder="รหัสผ่าน">
-                    <h5 class="font-size15">ยืนยันรหัสผ่าน</h5>
-                    <input type="text" class="form-control mb-3" style="border-radius: 15px;" placeholder="ยืนยันรหัสผ่าน">
-                    <button class="btn text-center w-100 text-light mt-3 mb-2" style="background-color: #d09b2c;border-radius: 15px;">สมัครสมาชิก</button>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Modal content -->
     <div class="modal fade" id="contentModal" tabindex="-1" role="dialog" aria-labelledby="contentModalLabel" aria-hidden="true">
