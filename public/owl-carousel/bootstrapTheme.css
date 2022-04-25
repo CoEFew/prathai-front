@@ -1,0 +1,56 @@
+
+
+/*!
+ * Bootstrap Responsive v2.3.2
+ *
+ * Copyright 2012 Twitter, Inc
+ * Licensed under the Apache License v2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Designed and built with all the love in the world @twitter by @mdo and @fat.
+ */
+
+  /*decktop Extra large*/
+@media (min-width: 1200px) {
+  .span12 {
+    width: 100%;
+  }
+
+}
+
+/*decktop Large*/
+@media (min-width: 993px) and (max-width: 1199px) {
+  .span12 {
+    width: 100%;
+  }
+
+}
+
+/*decktop md*/
+@media (min-width: 769px) and (max-width: 992px) {
+  .span12 {
+    width: 100%;
+  }
+}
+
+/*ipad Medium*/
+@media (min-width: 577px) and (max-width: 768px) {
+  .span12 {
+    width: 100%;
+  }
+}
+
+
+/*mobile*/
+@media (min-width: 376px) and (max-width: 576px) {
+  .span12 {
+    width: 100%;
+  }
+}
+
+/*mobile xs*/
+@media (max-width: 375.9px) {
+  .span12 {
+    width: 100%;
+  }
+}
